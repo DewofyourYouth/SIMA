@@ -1,6 +1,15 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
+const njr = require('gulp-nunjucks-render');
+
+ function nunjucks(){
+    return gulp.src('./pages/**/*.+(html|njk)')
+    .pipe(njr({
+        path: ['templates']
+    }))
+    .pipe(gulp.dest('./'))
+}
 
 function style() {
     // 1. where is my scss file?
@@ -19,6 +28,8 @@ function watch() {
             baseDir: './'
         }
     });
+    gulp.watch('./pages/**/*.njk', nunjucks);
+    gulp.watch('./templates/**/*.njk', nunjucks);
     gulp.watch('./scss/**/*.scss', style);
     gulp.watch('./*.html').on('change', browserSync.reload);
     gulp.watch('./js/**/*.js').on('change', browserSync.reload)

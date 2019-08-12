@@ -1,4 +1,10 @@
+@import 'vars';
+@import 'header';
+@import 'index/welcome';
+@import 'footer';
+
 body {
+    padding-top: 60px;
     color: #171717;
     background-color: #f3f3f3;
 }
