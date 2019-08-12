@@ -4,7 +4,7 @@
 
 #welcome {
   min-height: 700px;
-  background: url(/assets/workplace.jpg) fixed center;
+  background: url(https://raw.githubusercontent.com/DewofyourYouth/SIMA/master/assets/workplace.jpg) fixed center;
   background-size: cover;
   text-align: center;
   padding-top: 200px; }
