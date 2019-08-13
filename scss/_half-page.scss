@@ -1,0 +1,26 @@
+%half-page {
+    max-height: 600px;
+
+    .col-md-6 {
+        margin: auto 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            max-height: 600px;
+        }
+
+        h2 {
+            color: $header-grey;
+            padding-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            padding: 10px 30px;
+        }
+    }
+}

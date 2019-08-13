@@ -1,7 +1,11 @@
 @import 'vars';
 @import 'header';
+@import 'half-page';
 @import 'index/welcome';
 @import 'footer';
+@import 'index/services';
+@import 'index/online_payments';
+@import 'index/brief_about';
 
 body {
     padding-top: 55px;

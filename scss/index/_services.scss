@@ -1,0 +1,94 @@
+#ms-inner {
+    display: grid;
+    grid-gap: 1rem;
+    text-align: center;
+    margin: 20px 0;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: 
+        'left-image hs-1 hs-2'
+        'left-image hs-3 hs-4';
+
+        @media #{$mobile} {
+            display: flex;
+            flex-flow: row wrap;
+        }
+}
+
+#left-image {
+    grid-area: left-image;
+    padding-top: 30px;
+    margin: auto auto;
+    text-align: center;
+    width: 100%;
+
+    img {
+        width: 75%;
+        border-radius: 10px;
+
+        @media #{$mobile} {
+            width: 95%;
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+#hs-1 {
+    grid-area: hs-1;
+    h3 {
+        padding-bottom: 15px;
+    }
+    
+}
+
+#hs-2 {
+    grid-area: hs-2;
+}
+
+#hs-3 {
+    grid-area: hs-3;
+}
+
+#hs-4 {
+    grid-area: hs-4;
+} 
+
+.hs-service {
+    margin: auto auto;
+    display: inline-table;
+    padding: 10px;
+    width: 100%;
+    
+   
+
+    hr {
+        margin: 10px 30%;
+        border: 1.5px solid grey;
+        border-radius: 1px;
+
+    }
+
+    a {
+        margin-top: 20px;;
+    }
+}
+
+.tc {
+   display: table-cell;
+   width: 100%;
+   margin: 5px;
+   box-shadow: 1px 1px 3px 4px #cacaca;
+   border-radius: 5px;
+   vertical-align: middle;
+   height: 300px;
+
+   @media #{$mobile} {
+       padding: 20px;
+   }
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+
