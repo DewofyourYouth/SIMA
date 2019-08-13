@@ -89,7 +89,8 @@ footer {
 
 .footer-txt {
   color: #c4c4c4;
-  text-align: justify; }
+  text-align: justify;
+  margin-right: 30px !important; }
 
 #footer-contact {
   display: flex;
