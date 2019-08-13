@@ -20,6 +20,9 @@
                 object-position: 50% 25%;
             }
             max-height: 600px;
+            @media #{$laptop-plus} {
+                object-position: 50% 25%;
+            }
         }
 
         h2 {

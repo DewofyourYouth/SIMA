@@ -28,6 +28,9 @@
       @media only screen and (min-width: 1439px) {
         #brief-about .col-md-6 img, #online-payments .col-md-6 img {
           object-position: 50% 25%; } }
+      @media only screen and (min-width: 1439px) {
+        #brief-about .col-md-6 img, #online-payments .col-md-6 img {
+          object-position: 50% 25%; } }
     #brief-about .col-md-6 h2, #online-payments .col-md-6 h2 {
       color: #919191;
       padding-bottom: 20px; }
@@ -91,7 +94,8 @@ footer {
 
 .footer-txt {
   color: #c4c4c4;
-  text-align: justify; }
+  text-align: justify;
+  margin-right: 30px !important; }
 
 #footer-contact {
   display: flex;
