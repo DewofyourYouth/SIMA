@@ -2,5 +2,9 @@
     @media #{$laptop} {
         margin-right: 80px !important;
     }
-    
 }
+
+.navbar-brand{
+    @extend #logo-img;
+        
+    }

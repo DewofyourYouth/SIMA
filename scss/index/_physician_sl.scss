@@ -1,0 +1,17 @@
+#physicians-spotlight {
+    @extend #profile-pic;
+    .mouse-over {
+        .overlay {
+            width: 250px;
+            transition-duration: 1s;
+        } 
+        
+        img {
+        filter: grayscale(0%) !important;
+        transition-duration: 1s;
+        }
+    }
+    
+   
+    
+}

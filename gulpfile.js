@@ -23,11 +23,17 @@ function style() {
 }
 
 function watch() {
+    // 1. Initialize browserSync
     browserSync.init({
         server: {
+            // 2. Identify where the root directory of the server is
             baseDir: './'
         }
     });
+
+    //  Arguments: 
+    //      1) path: where to look for changes, 
+    //      2) callback: which Gulp functions to run
     gulp.watch('./pages/**/*.njk', nunjucks);
     gulp.watch('./templates/**/*.njk', nunjucks);
     gulp.watch('./scss/**/*.scss', style);

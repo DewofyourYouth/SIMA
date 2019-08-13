@@ -2,24 +2,34 @@
   .justify-content-end {
     margin-right: 80px !important; } }
 
-#online-payments, #brief-about {
+#brief-about, #online-payments {
+  background-color: #e9e9e9;
   max-height: 600px; }
-  #online-payments .col-md-6, #brief-about .col-md-6 {
+  @media only screen and (max-width: 990px) {
+    #brief-about, #online-payments {
+      max-height: 100%;
+      display: flex;
+      flex-flow: column; } }
+  #brief-about .col-md-6, #online-payments .col-md-6 {
     margin: auto 0;
     padding: 0;
     text-align: center;
     width: 100%; }
-    #online-payments .col-md-6 img, #brief-about .col-md-6 img {
+    #brief-about .col-md-6 img, #online-payments .col-md-6 img {
       width: 100%;
       object-fit: cover;
       object-position: top;
       max-height: 600px; }
-    #online-payments .col-md-6 h2, #brief-about .col-md-6 h2 {
+    #brief-about .col-md-6 h2, #online-payments .col-md-6 h2 {
       color: #919191;
       padding-bottom: 20px; }
-    #online-payments .col-md-6 p, #brief-about .col-md-6 p {
+    #brief-about .col-md-6 p, #online-payments .col-md-6 p {
       text-align: justify;
       padding: 10px 30px; }
+
+@media only screen and (max-width: 990px) {
+  #brief-about {
+    flex-flow: column-reverse; } }
 
 #welcome {
   min-height: 700px;
@@ -43,7 +53,60 @@
 
 footer {
   background-color: #171717;
-  padding-top: 30px; }
+  padding: 0px 30px; }
+  footer .col-md-4 {
+    padding: 40px 10px;
+    border-right: solid 0.5px #919191; }
+    @media only screen and (max-width: 990px) {
+      footer .col-md-4 {
+        border-right: none; } }
+  footer .lc {
+    border-right: none; }
+  footer ul#social-media li {
+    display: inline-block;
+    padding: 10px;
+    padding-top: 20%;
+    font-size: 2rem; }
+    @media only screen and (max-width: 990px) {
+      footer ul#social-media li {
+        text-align: center;
+        padding-top: 0;
+        font-size: 1.5rem; } }
+  footer .logo {
+    padding-bottom: 30px; }
+  footer .sm a {
+    color: #919191;
+    transition-duration: 1s; }
+    footer .sm a:hover {
+      color: #ffe9e9;
+      transition-duration: 1s; }
+
+.footer-txt {
+  color: #c4c4c4;
+  text-align: justify; }
+
+#footer-contact {
+  display: flex;
+  flex-flow: column;
+  color: white;
+  justify-content: space-evenly; }
+  #footer-contact .ftr-contact-info {
+    padding: 20px 0;
+    display: flex;
+    flex-flow: row;
+    height: 1fr; }
+    #footer-contact .ftr-contact-info * {
+      min-width: 100px; }
+  #footer-contact .phones {
+    border-top: solid 0.5px #919191;
+    border-bottom: solid 0.5px #919191; }
+  #footer-contact .contact-title {
+    color: #9f97f9;
+    text-transform: uppercase;
+    font-weight: 700; }
+  #footer-contact a {
+    display: block;
+    color: #fff; }
 
 #ms-inner {
   display: grid;
@@ -112,7 +175,64 @@ footer {
 .icon {
   font-size: 3rem; }
 
+#physicians-spotlight .mouse-over .overlay {
+  width: 250px;
+  transition-duration: 1s; }
+
+#physicians-spotlight .mouse-over img {
+  filter: grayscale(0%) !important;
+  transition-duration: 1s; }
+
 body {
   padding-top: 55px;
   color: #171717;
   background-color: #f3f3f3; }
+  @media only screen and (max-width: 990px) {
+    body {
+      padding-top: 70px; } }
+
+#logo-img img, .navbar-brand img, footer .logo img {
+  max-width: 220px; }
+
+@media only screen and (max-width: 990px) {
+  .row {
+    display: flex;
+    flex-flow: column; } }
+
+#profile-pic, #physicians-spotlight {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px;
+  cursor: pointer; }
+  #profile-pic .overlay, #physicians-spotlight .overlay {
+    position: absolute;
+    margin: auto;
+    margin-top: 200px;
+    padding: 10px 20px;
+    -webkit-clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+    left: 50;
+    height: 70px;
+    width: 200px;
+    background-color: #0000009a;
+    color: #f3f3f3;
+    z-index: 100; }
+    #profile-pic .overlay:hover, #physicians-spotlight .overlay:hover {
+      width: 250px;
+      transition-duration: .5s; }
+    #profile-pic .overlay h3, #physicians-spotlight .overlay h3 {
+      margin-bottom: 0; }
+    #profile-pic .overlay p, #physicians-spotlight .overlay p {
+      padding-top: 0;
+      margin-top: 0; }
+  #profile-pic img, #physicians-spotlight img {
+    width: 100%;
+    overflow: hidden;
+    filter: grayscale(100%);
+    transition-duration: 1s; }
+    @media only screen and (max-width: 990px) {
+      #profile-pic img, #physicians-spotlight img {
+        padding-bottom: 10px; } }
+    #profile-pic img:hover, #physicians-spotlight img:hover {
+      filter: grayscale(0%);
+      transition-duration: 1s; }

@@ -6,9 +6,80 @@
 @import 'index/services';
 @import 'index/online_payments';
 @import 'index/brief_about';
+@import 'index/physician_sl';
 
 body {
     padding-top: 55px;
     color: #171717;
     background-color: #f3f3f3;
+    @media #{$mobile} {
+        padding-top: 70px;
+    }
 }
+
+#logo-img {
+    img {
+        max-width: 220px;
+    }
+}
+
+.row {
+    @media #{$mobile} {
+        display: flex;
+        flex-flow: column;
+    }
+
+}
+
+#profile-pic {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px;
+    cursor: pointer;
+
+    .overlay {
+        position: absolute;
+        margin: auto;
+        margin-top: 200px;
+        padding: 10px 20px;
+        -webkit-clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+        left: 50;
+        height: 70px;
+        width: 200px;
+        background-color: #0000009a;
+        color: #f3f3f3;
+        z-index: 100;
+        &:hover {
+            width: 250px;
+            transition-duration: .5s;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+
+        p {
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+   
+    img {
+        width: 100%;
+        overflow: hidden;
+        filter: grayscale(100%);
+        transition-duration: 1s;
+
+        @media #{$mobile} {
+                padding-bottom: 10px;
+            }
+
+        &:hover {
+            filter: grayscale(0%);
+            transition-duration: 1s;
+        }
+    }
+}
+
+
