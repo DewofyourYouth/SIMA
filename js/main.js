@@ -1,3 +1,9 @@
+/**
+ * 
+ * Copyright (c) Jacob Shore
+ * 
+ */
+
 $(document).ready(function(){
     
     $('.doc-pic').hover(function(){
