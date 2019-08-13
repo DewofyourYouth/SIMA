@@ -214,17 +214,21 @@ body {
     left: 50;
     height: 70px;
     width: 200px;
+    transition-duration: .5s;
     background-color: #0000009a;
     color: #f3f3f3;
     z-index: 100; }
     #profile-pic .overlay:hover, #physicians-spotlight .overlay:hover {
       width: 250px;
       transition-duration: .5s; }
-    #profile-pic .overlay h3, #physicians-spotlight .overlay h3 {
+    #profile-pic .overlay h4, #physicians-spotlight .overlay h4 {
+      font-size: 1.3rem;
       margin-bottom: 0; }
     #profile-pic .overlay p, #physicians-spotlight .overlay p {
       padding-top: 0;
-      margin-top: 0; }
+      margin-top: 0;
+      font-size: .9rem;
+      font-style: italic; }
   #profile-pic img, #physicians-spotlight img {
     width: 100%;
     overflow: hidden;

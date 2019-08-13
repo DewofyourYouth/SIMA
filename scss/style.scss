@@ -47,6 +47,7 @@ body {
         left: 50;
         height: 70px;
         width: 200px;
+        transition-duration: .5s;
         background-color: #0000009a;
         color: #f3f3f3;
         z-index: 100;
@@ -55,13 +56,16 @@ body {
             transition-duration: .5s;
         }
 
-        h3 {
+        h4 {
+            font-size: 1.3rem;
             margin-bottom: 0;
         }
 
         p {
             padding-top: 0;
             margin-top: 0;
+            font-size: .9rem;
+            font-style: italic;
         }
     }
    
