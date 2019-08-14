@@ -32,7 +32,7 @@ body {
 
 
  /*
-    Intro on pages
+    Intro on navbar pages (other than home page)
  */  
 
 
@@ -49,14 +49,28 @@ body {
 
 }
 
+/* Styles specific to header */
 @import 'header';
+/* Styles for half half page components */
 @import 'half-page';
-@import 'index/welcome';
-@import 'footer';
-@import 'index/services';
-@import 'index/online_payments';
-@import 'index/brief_about';
-@import 'index/physician_sl';
-@import 'about/mission_statement';
-@import 'physicians';
+/* 
+    Styles specific for profile pictures 
+    - used on the hompage on the physicians page  
+*/
 @import 'profile_pic';
+/* Styles for welcome section on homepage */
+@import 'index/welcome';
+/* Styles for the services section on the homepage */
+@import 'index/services';
+/* Styles for the online payments section on the homepage */
+@import 'index/online_payments';
+/* Styles for the about section on the homepage */
+@import 'index/brief_about';
+/* Styles for the physician spotlight section on the homepage */
+@import 'index/physician_sl';
+/* Styles for the mission statement on the about page */
+@import 'about/mission_statement';
+/* Styles for the mission statement section on the about page */
+@import 'physicians';
+/* Styles for footer */
+@import 'footer';
