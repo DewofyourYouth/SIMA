@@ -16,7 +16,7 @@ const data = require('gulp-data');
         // where the template files are located
         path: ['templates']
     }))
-    // where to send the converted njk > html files
+    // where to send the converted njk files => html files
     .pipe(gulp.dest('./'))
 }
 
