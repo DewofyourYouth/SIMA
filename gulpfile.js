@@ -23,7 +23,7 @@ const data = require('gulp-data');
 function style() {
     // 1. where is my scss file?
     return gulp.src('./scss/**/*.scss')
-    // 2. pass that file through sass compiler
+    // 2. pass that file through sass compiler (to change to minified change output style to compressed)
     .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
     // 3. where to save compiled css?
     .pipe(gulp.dest('./css'))
