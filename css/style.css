@@ -198,6 +198,12 @@ footer {
 #abt-mission h2, #abt-mission a {
   margin-left: 30px; }
 
+#physicians {
+  padding: 20px 100px; }
+  #physicians #doc-pics {
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-gap: 40px; }
+
 body {
   padding-top: 80px;
   color: #171717;

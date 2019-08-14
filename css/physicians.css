@@ -1,0 +1,5 @@
+#physicians {
+  padding: 20px 100px; }
+  #physicians #doc-pics {
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-gap: 40px; }
