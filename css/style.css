@@ -205,12 +205,9 @@ footer {
     grid-gap: 40px; }
 
 body {
-  padding-top: 80px;
+  padding-top: 70px;
   color: #171717;
   background-color: #f3f3f3; }
-  @media only screen and (max-width: 990px) {
-    body {
-      padding-top: 70px; } }
 
 #logo-img img, .navbar-brand img, footer .logo img {
   max-width: 220px; }

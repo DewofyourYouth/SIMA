@@ -17,12 +17,9 @@
 @import 'physicians';
 
 body {
-    padding-top: 80px;
+    padding-top: 70px;
     color: #171717;
     background-color: #f3f3f3;
-    @media #{$mobile} {
-        padding-top: 70px;
-    }
 }
 
 #logo-img {
