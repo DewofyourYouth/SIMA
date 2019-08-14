@@ -24,7 +24,7 @@ function style() {
     // 1. where is my scss file?
     return gulp.src('./scss/**/*.scss')
     // 2. pass that file through sass compiler
-    .pipe(sass())
+    .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
     // 3. where to save compiled css?
     .pipe(gulp.dest('./css'))
     // 4. stream changes to all browsers

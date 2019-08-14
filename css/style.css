@@ -3,6 +3,38 @@
     Copyright (c) Jacob Shore
 
 */
+/* Make padding on body to prevent overlap w/ fixed header */
+body {
+  padding-top: 70px;
+  color: #171717;
+  background-color: #f3f3f3;
+}
+
+/* Keep logo on navbar and footer >= 220px */
+#logo-img img, .navbar-brand img, footer .logo img {
+  max-width: 220px;
+}
+
+/* If mobile - make rows flexbox column */
+@media only screen and (max-width: 990px) {
+  .row {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+#intro {
+  min-height: 400px;
+  background: linear-gradient(#0000009a, #0000009a), url(../assets/doc_computer.jpg) fixed right center;
+  background-position: cover;
+  color: white;
+  text-align: center;
+}
+
+#intro h1 {
+  margin-top: 100px;
+}
+
 @media only screen and (min-width: 1100px) {
   .justify-content-end {
     margin-right: 80px !important;
@@ -276,6 +308,9 @@ footer .sm a:hover {
   font-size: 3rem;
 }
 
+/*
+    Styles specific to doctors spotlight on home page
+*/
 #doc-pics .mouse-over .overlay {
   width: 250px;
   transition-duration: 1s;
@@ -290,29 +325,33 @@ footer .sm a:hover {
   margin-left: 30px;
 }
 
+/*
+    Styles specific to physicians page
+*/
 #physicians {
-  padding: 20px 100px;
+  padding-top: 50px;
 }
 
-#physicians #doc-pics {
-  grid-template-columns: repeat(3, 1fr) !important;
-  grid-gap: 40px;
-}
-
-body {
-  padding-top: 70px;
-  color: #171717;
-  background-color: #f3f3f3;
-}
-
-#logo-img img, .navbar-brand img, footer .logo img {
-  max-width: 220px;
-}
-
-@media only screen and (max-width: 990px) {
-  .row {
-    display: flex;
-    flex-flow: column;
+@media only screen and (min-width: 1100px) {
+  #physicians {
+    padding: 50px 100px;
+  }
+  #physicians #doc-pics {
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-gap: 40px;
+  }
+  #physicians .overlay {
+    height: 100px;
+  }
+  #physicians .overlay h4 {
+    padding-top: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+  }
+  #physicians .overlay p {
+    padding-top: 0;
+    font-size: 1rem;
+    font-style: italic;
   }
 }
 
@@ -369,7 +408,7 @@ body {
   -webkit-clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
   clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
   height: 80px;
-  width: 220px;
+  min-width: 220px;
   text-align: left;
   transition-duration: .5s;
   background-color: #0000009a;
@@ -377,9 +416,16 @@ body {
   z-index: 100;
 }
 
-.overlay p {
-  margin-top: 5px;
-  font-style: italic;
+@media only screen and (min-width: 1100px) {
+  .overlay {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .overlay {
+    width: 220px;
+  }
 }
 
 .overlay h4 {
@@ -392,16 +438,4 @@ body {
   margin-top: 0;
   font-size: .9rem;
   font-style: italic;
-}
-
-#intro {
-  min-height: 400px;
-  background: linear-gradient(#0000009a, #0000009a), url(../assets/doc_computer.jpg) fixed right center;
-  background-position: cover;
-  color: white;
-  text-align: center;
-}
-
-#intro h1 {
-  margin-top: 100px;
 }
