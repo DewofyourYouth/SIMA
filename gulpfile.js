@@ -2,9 +2,13 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const njr = require('gulp-nunjucks-render');
+const data = require('gulp-data');
 
  function nunjucks(){
     return gulp.src('./pages/**/*.+(html|njk)')
+    .pipe(data(function(){
+        return require('./data.json')
+    }))
     .pipe(njr({
         path: ['templates']
     }))

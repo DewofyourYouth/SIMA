@@ -13,9 +13,10 @@
 @import 'index/online_payments';
 @import 'index/brief_about';
 @import 'index/physician_sl';
+@import 'about/mission_statement';
 
 body {
-    padding-top: 55px;
+    padding-top: 80px;
     color: #171717;
     background-color: #f3f3f3;
     @media #{$mobile} {
@@ -92,4 +93,16 @@ body {
     }
 }
 
+#intro {
+    min-height: 400px;
+    background: linear-gradient(#0000009a, #0000009a), url(../assets/doc_computer.jpg);
+    background-position: cover;
+    color: white;
+    text-align: center;
+
+    h1 {
+        margin-top: 100px;
+    }
+
+}
 

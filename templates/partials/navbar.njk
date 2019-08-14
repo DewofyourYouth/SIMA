@@ -5,14 +5,14 @@
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-    
-      <a class="nav-item nav-link" href="about.html">About</a>
-      <a class="nav-item nav-link" href="services.html">Services</a>
-      <a class="nav-item nav-link" href="physicians.html">Physicians</a>
-      <a class="nav-item nav-link" href="nurses.html">Nurses APNP</a>
-      <a class="nav-item nav-link" href="patients.html">Patients</a>
-      <a class="nav-item nav-link" href="bills.html">Pay Bill</a>
-      <a class="nav-item nav-link" href="contact.html">Contact</a>
+
+      <a class="nav-item nav-link {% if page_name == "About" %}active{% endif %}" href="about.html" >About</a>
+      <a class="nav-item nav-link {% if page_name == "Services" %}active{% endif %}" href="services.html">Services</a>
+      <a class="nav-item nav-link {% if page_name == "Physicians" %}active{% endif %}" href="physicians.html">Physicians</a>
+      <a class="nav-item nav-link {% if page_name == "Nurses" %}active{% endif %}" href="nurses.html">Nurses APNP</a>
+      <a class="nav-item nav-link {% if page_name == "Patients" %}active{% endif %}" href="patients.html">Patients</a>
+      <a class="nav-item nav-link {% if page_name == "Pay Bill" %}active{% endif %}" href="bills.html">Pay Bill</a>
+      <a class="nav-item nav-link  {% if page_name == "Contact" %}active{% endif %}" href="contact.html">Contact</a>
    
     </div>
   </div>

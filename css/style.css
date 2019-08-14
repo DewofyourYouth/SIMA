@@ -7,34 +7,34 @@
   .justify-content-end {
     margin-right: 80px !important; } }
 
-#brief-about, #online-payments {
+#brief-about, #online-payments, #abt-mission {
   background-color: #e9e9e9;
   max-height: 600px; }
   @media only screen and (max-width: 990px) {
-    #brief-about, #online-payments {
+    #brief-about, #online-payments, #abt-mission {
       max-height: 100%;
       display: flex;
       flex-flow: column; } }
-  #brief-about .col-md-6, #online-payments .col-md-6 {
+  #brief-about .col-md-6, #online-payments .col-md-6, #abt-mission .col-md-6 {
     margin: auto 0;
     padding: 0;
     text-align: center;
     width: 100%; }
-    #brief-about .col-md-6 img, #online-payments .col-md-6 img {
+    #brief-about .col-md-6 img, #online-payments .col-md-6 img, #abt-mission .col-md-6 img {
       width: 100%;
       object-fit: cover;
       object-position: top;
       max-height: 600px; }
       @media only screen and (min-width: 1439px) {
-        #brief-about .col-md-6 img, #online-payments .col-md-6 img {
+        #brief-about .col-md-6 img, #online-payments .col-md-6 img, #abt-mission .col-md-6 img {
           object-position: 50% 25%; } }
       @media only screen and (min-width: 1439px) {
-        #brief-about .col-md-6 img, #online-payments .col-md-6 img {
+        #brief-about .col-md-6 img, #online-payments .col-md-6 img, #abt-mission .col-md-6 img {
           object-position: 50% 25%; } }
-    #brief-about .col-md-6 h2, #online-payments .col-md-6 h2 {
+    #brief-about .col-md-6 h2, #online-payments .col-md-6 h2, #abt-mission .col-md-6 h2 {
       color: #919191;
       padding-bottom: 20px; }
-    #brief-about .col-md-6 p, #online-payments .col-md-6 p {
+    #brief-about .col-md-6 p, #online-payments .col-md-6 p, #abt-mission .col-md-6 p {
       text-align: justify;
       padding: 10px 30px; }
 
@@ -195,8 +195,11 @@ footer {
   filter: grayscale(0%) !important;
   transition-duration: 1s; }
 
+#abt-mission h2, #abt-mission a {
+  margin-left: 30px; }
+
 body {
-  padding-top: 55px;
+  padding-top: 80px;
   color: #171717;
   background-color: #f3f3f3; }
   @media only screen and (max-width: 990px) {
@@ -252,3 +255,12 @@ body {
     #profile-pic img:hover, #physicians-spotlight img:hover {
       filter: grayscale(0%);
       transition-duration: 1s; }
+
+#intro {
+  min-height: 400px;
+  background: linear-gradient(#0000009a, #0000009a), url(../assets/doc_computer.jpg);
+  background-position: cover;
+  color: white;
+  text-align: center; }
+  #intro h1 {
+    margin-top: 100px; }
