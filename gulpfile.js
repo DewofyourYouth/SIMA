@@ -52,5 +52,4 @@ function watch() {
 }
 
 // these make the functions accessable from the command line by writing gulp and then the value.
-exports.style = style;
 exports.watch = watch;
