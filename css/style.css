@@ -23,6 +23,9 @@ body {
   }
 }
 
+/*
+    Intro on pages
+ */
 #intro {
   min-height: 400px;
   background: linear-gradient(#0000009a, #0000009a), url(../assets/doc_computer.jpg) fixed right center;
@@ -341,10 +344,10 @@ footer .sm a:hover {
     grid-gap: 40px;
   }
   #physicians .overlay {
-    height: 100px;
+    height: 90px;
   }
   #physicians .overlay h4 {
-    padding-top: 10px;
+    padding-top: 8px;
     font-size: 1.5rem;
     margin-bottom: 4px;
   }
@@ -402,6 +405,7 @@ footer .sm a:hover {
 
 .overlay {
   font-family: sans-serif;
+  pointer-events: none;
   position: absolute;
   padding: 10px 20px;
   top: 70%;

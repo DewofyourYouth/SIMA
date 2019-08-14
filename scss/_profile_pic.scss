@@ -38,6 +38,7 @@
   
   .overlay {
     font-family: sans-serif;
+    pointer-events: none;
     position: absolute;
     padding: 10px 20px;
     top: 70%;
