@@ -1,3 +1,13 @@
 {
-    "intro_photo": "assets/doc_computer.jpg"
+    "photos": [
+        {"name":"intro photo", "src": "assets/doc_computer.jpg"},
+        {"name": "woman in suit", "src": "assets/woman.jpg"},
+        {"name": "man in suit", "src": "assets/suit.jpg"}
+    ],
+    "people_pics": [
+        {"name": "Jessica Spencer", "title": "Podiatrist", "src": "assets/woman1.jpg"},
+        {"name": "Richard Wu", "title": "Break Dancer", "src": "assets/man2.jpg"},
+        {"name": "Natasha Tarkov", "title": "Gazes Fondly", "src": "assets/woman2.jpg"},
+        {"name": "Deja Wu", "title": "Uncanny Resemblance", "src": "assets/man2.jpg"}
+    ]
 }

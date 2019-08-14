@@ -1,8 +1,10 @@
 {% set page_name = 'Nurses' %}
 {% extends 'page-layout.njk' %}
 {% block pageContent %}
-<div class="col-12">
-    <div class="row">
-    </div>
-</div>
+{# {% for photo in photos %}
+<img src="{{photo.src}}" alt="">
+{% endfor %} #}
+{% for person in people_pics %}
+ <img src="{{person.src}}" alt="">
+{% endfor %}
 {% endblock pageContent %}
