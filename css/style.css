@@ -258,7 +258,7 @@ body {
 
 #intro {
   min-height: 400px;
-  background: linear-gradient(#0000009a, #0000009a), url(../assets/doc_computer.jpg);
+  background: linear-gradient(#0000009a, #0000009a), url(../assets/doc_computer.jpg) fixed right center;
   background-position: cover;
   color: white;
   text-align: center; }
