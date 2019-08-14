@@ -82,29 +82,26 @@ body {
     -webkit-clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
     clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
     height: 80px;
-    width: 220px;
+    width: 45%;
+    min-width: 220px;
     text-align: left;
     transition-duration: .5s;
     background-color: #0000009a;
     color: #f3f3f3;
     z-index: 100;
 
-    p {
-      margin-top: 5px;
-      font-style: italic;
-    }
-    h4 {
-                font-size: 1.3rem;
-                margin-bottom: 0;
-            }
-    
-            p {
-                padding-top: 0;
-            margin-top: 0;
-            font-size: .9rem;
-            font-style: italic;
-            }
-  }
+        h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0;
+        }
+
+        p {
+        padding-top: 0;
+        margin-top: 0;
+        font-size: .9rem;
+        font-style: italic;
+        }
+}
    
 
 
