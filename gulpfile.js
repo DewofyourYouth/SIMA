@@ -5,13 +5,18 @@ const njr = require('gulp-nunjucks-render');
 const data = require('gulp-data');
 
  function nunjucks(){
+    // where the nunjucks files to convert to html are 
     return gulp.src('./pages/**/*.+(html|njk)')
+    // include the data included in data.json
     .pipe(data(function(){
         return require('./data.json')
     }))
+    // actually do the conversion
     .pipe(njr({
+        // where the template files are located
         path: ['templates']
     }))
+    // where to send the converted njk > html files
     .pipe(gulp.dest('./'))
 }
 
@@ -45,5 +50,6 @@ function watch() {
     gulp.watch('./js/**/*.js').on('change', browserSync.reload)
 }
 
+// these make the functions accessable from the command line by writing gulp and then the value.
 exports.style = style;
 exports.watch = watch;
