@@ -1,33 +1,54 @@
-/*
-    Styles specific to physicians page
-*/
 
 #physicians {
     padding-top: 50px;
     @media #{$laptop} {
     padding: 50px 100px;
     #doc-pics {
-            grid-template-columns: repeat(3, 1fr) !important;
-            grid-gap: 40px;
-        }
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-gap: 40px;
+    }
+        .overlay {
+            height: 90px;
+            width: 55%;
+            min-width: 250px;
+            letter-spacing: .7px;
 
-        
-            .overlay {
-                height: 90px;
-        
-                h4 {
-                    padding-top: 8px;
-                    font-size: 1.5rem;
-                    margin-bottom: 4px;
-                }
-        
-                p {
-                padding-top: 0;
-                font-size: 1rem;
-                font-style: italic;
-                }
+    
+            h4 {
+                padding-top: 8px;
+                font-size: 1.6rem;
+                margin-bottom: 4px;
             }
+    
+            p {
+            padding-top: 0;
+            font-size: 1.1rem;
+            font-style: italic;
+            }
+        }
+    }
+    #doc-pics {
+        @extend #profile-pic;
+        .mouse-over {
+            .overlay {
+                min-width: 280px;
+                width: 75%;
+                transition-duration: 1s;
+                transition-timing-function: ease;
+            } 
+            
+            img {
+            filter: grayscale(0%) !important;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            }
+        }
+        
+       
+        
     }
 
     
 }
+
+

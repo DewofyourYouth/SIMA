@@ -24,7 +24,7 @@ body {
 }
 
 /*
-    Intro on pages
+    Intro on navbar pages (other than home page)
  */
 #intro {
   min-height: 400px;
@@ -38,12 +38,14 @@ body {
   margin-top: 100px;
 }
 
+/* Styles specific to header */
 @media only screen and (min-width: 1100px) {
   .justify-content-end {
     margin-right: 80px !important;
   }
 }
 
+/* Styles for half half page components */
 #brief-about, #online-payments, #abt-mission {
   background-color: #e9e9e9;
   max-height: 600px;
@@ -99,6 +101,97 @@ body {
   }
 }
 
+/* 
+    Styles specific for profile pictures 
+    - used on the hompage on the physicians page  
+*/
+#profile-pic, #doc-pics, #physicians #doc-pics {
+  text-align: center;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1100px) {
+  #profile-pic, #doc-pics, #physicians #doc-pics {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #profile-pic, #doc-pics, #physicians #doc-pics {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+  }
+}
+
+#profile-pic .doc-pic, #doc-pics .doc-pic, #physicians #doc-pics .doc-pic {
+  position: relative;
+  margin-bottom: 20px;
+  height: fit-content;
+}
+
+#profile-pic .doc-pic img, #doc-pics .doc-pic img, #physicians #doc-pics .doc-pic img {
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition-duration: 1s;
+}
+
+@media only screen and (max-width: 990px) {
+  #profile-pic .doc-pic img, #doc-pics .doc-pic img, #physicians #doc-pics .doc-pic img {
+    padding-bottom: 10px;
+  }
+}
+
+#profile-pic .doc-pic img:hover, #doc-pics .doc-pic img:hover, #physicians #doc-pics .doc-pic img:hover {
+  filter: grayscale(0%);
+  transition-duration: 1s;
+}
+
+.overlay {
+  font-family: sans-serif;
+  pointer-events: none;
+  position: absolute;
+  padding: 10px 20px;
+  top: 70%;
+  -webkit-clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+  height: 80px;
+  min-width: 220px;
+  text-align: left;
+  transition-duration: .5s;
+  background-color: #0000009a;
+  color: #f3f3f3;
+  z-index: 100;
+}
+
+@media only screen and (min-width: 1100px) {
+  .overlay {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .overlay {
+    width: 220px;
+  }
+}
+
+.overlay h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.overlay p {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: .9rem;
+  font-style: italic;
+}
+
+/* Styles for welcome section on homepage */
 #welcome {
   min-height: 700px;
   background: url(https://raw.githubusercontent.com/DewofyourYouth/SIMA/master/assets/workplace.jpg) fixed top center;
@@ -129,95 +222,7 @@ body {
   }
 }
 
-footer {
-  background-color: #171717;
-  padding: 0px 30px;
-}
-
-footer .col-md-4 {
-  padding: 40px 10px;
-  border-right: solid 0.5px #919191;
-}
-
-@media only screen and (max-width: 990px) {
-  footer .col-md-4 {
-    border-right: none;
-  }
-}
-
-footer .lc {
-  border-right: none;
-}
-
-footer ul#social-media li {
-  display: inline-block;
-  padding: 10px;
-  padding-top: 20%;
-  font-size: 2rem;
-}
-
-@media only screen and (max-width: 990px) {
-  footer ul#social-media li {
-    text-align: center;
-    padding-top: 0;
-    font-size: 1.5rem;
-  }
-}
-
-footer .logo {
-  padding-bottom: 30px;
-}
-
-footer .sm a {
-  color: #919191;
-  transition-duration: 1s;
-}
-
-footer .sm a:hover {
-  color: #ffe9e9;
-  transition-duration: 1s;
-}
-
-.footer-txt {
-  color: #c4c4c4;
-  text-align: justify;
-  margin-right: 10px !important;
-}
-
-#footer-contact {
-  display: flex;
-  flex-flow: column;
-  color: white;
-  justify-content: space-evenly;
-}
-
-#footer-contact .ftr-contact-info {
-  padding: 20px 0;
-  display: flex;
-  flex-flow: row;
-  height: 1fr;
-}
-
-#footer-contact .ftr-contact-info * {
-  min-width: 100px;
-}
-
-#footer-contact .phones {
-  border-top: solid 0.5px #919191;
-  border-bottom: solid 0.5px #919191;
-}
-
-#footer-contact .contact-title {
-  color: #9f97f9;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-#footer-contact a {
-  display: block;
-  color: #fff;
-}
-
+/* Styles for the services section on the homepage */
 #ms-inner {
   display: grid;
   grid-gap: 1rem;
@@ -311,12 +316,13 @@ footer .sm a:hover {
   font-size: 3rem;
 }
 
-/*
-    Styles specific to doctors spotlight on home page
-*/
+/* Styles for the online payments section on the homepage */
+/* Styles for the about section on the homepage */
+/* Styles for the physician spotlight section on the homepage */
 #doc-pics .mouse-over .overlay {
   width: 250px;
   transition-duration: 1s;
+  transition-timing-function: ease;
 }
 
 #doc-pics .mouse-over img {
@@ -324,13 +330,12 @@ footer .sm a:hover {
   transition-duration: 1s;
 }
 
+/* Styles for the mission statement on the about page */
 #abt-mission h2, #abt-mission a {
   margin-left: 30px;
 }
 
-/*
-    Styles specific to physicians page
-*/
+/* Styles for the mission statement section on the about page */
 #physicians {
   padding-top: 50px;
 }
@@ -345,101 +350,121 @@ footer .sm a:hover {
   }
   #physicians .overlay {
     height: 90px;
+    width: 55%;
+    min-width: 250px;
+    letter-spacing: .7px;
   }
   #physicians .overlay h4 {
     padding-top: 8px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 4px;
   }
   #physicians .overlay p {
     padding-top: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-style: italic;
   }
 }
 
-#profile-pic, #doc-pics {
-  text-align: center;
-  max-width: 100%;
-}
-
-@media only screen and (min-width: 1100px) {
-  #profile-pic, #doc-pics {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  #profile-pic, #doc-pics {
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 100%;
-  }
-}
-
-#profile-pic .doc-pic, #doc-pics .doc-pic {
-  position: relative;
-  margin-bottom: 20px;
-  height: fit-content;
-}
-
-#profile-pic .doc-pic img, #doc-pics .doc-pic img {
-  width: 100%;
-  object-fit: cover;
-  filter: grayscale(100%);
+#physicians #doc-pics .mouse-over .overlay {
+  min-width: 280px;
+  width: 75%;
   transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+#physicians #doc-pics .mouse-over img {
+  filter: grayscale(0%) !important;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+/* Styles for footer */
+footer {
+  background-color: #171717;
+  padding: 0px 30px;
+}
+
+footer .col-md-4 {
+  padding: 40px 10px;
+  border-right: solid 0.5px #919191;
 }
 
 @media only screen and (max-width: 990px) {
-  #profile-pic .doc-pic img, #doc-pics .doc-pic img {
-    padding-bottom: 10px;
+  footer .col-md-4 {
+    border-right: none;
   }
 }
 
-#profile-pic .doc-pic img:hover, #doc-pics .doc-pic img:hover {
-  filter: grayscale(0%);
+footer .lc {
+  border-right: none;
+}
+
+footer ul#social-media li {
+  display: inline-block;
+  padding: 10px;
+  padding-top: 20%;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 990px) {
+  footer ul#social-media li {
+    text-align: center;
+    padding-top: 0;
+    font-size: 1.5rem;
+  }
+}
+
+footer .logo {
+  padding-bottom: 30px;
+}
+
+footer .sm a {
+  color: #919191;
   transition-duration: 1s;
 }
 
-.overlay {
-  font-family: sans-serif;
-  pointer-events: none;
-  position: absolute;
-  padding: 10px 20px;
-  top: 70%;
-  -webkit-clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
-  clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
-  height: 80px;
-  min-width: 220px;
-  text-align: left;
-  transition-duration: .5s;
-  background-color: #0000009a;
-  color: #f3f3f3;
-  z-index: 100;
+footer .sm a:hover {
+  color: #ffe9e9;
+  transition-duration: 1s;
 }
 
-@media only screen and (min-width: 1100px) {
-  .overlay {
-    width: 45%;
-  }
+.footer-txt {
+  color: #c4c4c4;
+  text-align: justify;
+  margin-right: 10px !important;
 }
 
-@media only screen and (max-width: 1100px) {
-  .overlay {
-    width: 220px;
-  }
+#footer-contact {
+  display: flex;
+  flex-flow: column;
+  color: white;
+  justify-content: space-evenly;
 }
 
-.overlay h4 {
-  font-size: 1.3rem;
-  margin-bottom: 0;
+#footer-contact .ftr-contact-info {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row;
+  height: 1fr;
 }
 
-.overlay p {
-  padding-top: 0;
-  margin-top: 0;
-  font-size: .9rem;
-  font-style: italic;
+#footer-contact .ftr-contact-info * {
+  min-width: 100px;
+}
+
+#footer-contact .phones {
+  border-top: solid 0.5px #919191;
+  border-bottom: solid 0.5px #919191;
+}
+
+#footer-contact .contact-title {
+  color: #9f97f9;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#footer-contact a {
+  display: block;
+  color: #fff;
 }
