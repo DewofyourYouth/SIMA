@@ -2,14 +2,14 @@
 {% extends 'page-layout.njk' %}
 {% block pageContent %}
 
-<!-- Nurses -->
+    <!-- Nurses -->
     <section id="nurses">
         <div class="row">
-        <div class="col-12">
-        <div id="doc-pics">
-                {% for doctor in doctor_pics %}
+            <div class="col-12">
+                <div id="doc-pics">
+                    {% for doctor in doctor_pics %}
                         <div class="doc-pic">
-                           
+
                             <a href="{{doctor.target}}">
                                 <img src="{{doctor.src}}" alt="">
                             </a>
@@ -19,11 +19,9 @@
                                     <p class="p-title">{{doctor.title}}</p>
                                 </div>
                             </a>
-                            
-                        </div>
-                    
-                {% endfor %}</div>
-{% endblock pageContent %}
-  
 
-  
+                        </div>
+
+                    {% endfor %}
+                </div>
+            {% endblock pageContent %}
