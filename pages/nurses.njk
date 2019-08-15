@@ -7,16 +7,16 @@
         <div class="row">
         <div class="col-12">
         <div id="doc-pics">
-                {% for person in doctor_pics %}
+                {% for doctor in doctor_pics %}
                         <div class="doc-pic">
                            
-                            <a href="{{person.target}}">
-                                <img src="{{person.src}}" alt="">
+                            <a href="{{doctor.target}}">
+                                <img src="{{doctor.src}}" alt="">
                             </a>
-                            <a href="{{person.target}}">
+                            <a href="{{doctor.target}}">
                                 <div class="nurse-info">
-                                    <p class="p-name">{{person.name}}</p>
-                                    <p class="p-title">{{person.title}}</p>
+                                    <p class="p-name">{{doctor.name}}</p>
+                                    <p class="p-title">{{doctor.title}}</p>
                                 </div>
                             </a>
                             
