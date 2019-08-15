@@ -3,11 +3,18 @@
     Copyright (c) Jacob Shore
 
 */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap");
 /* Make padding on body to prevent overlap w/ fixed header */
 body {
+  font-family: 'Roboto', sans-serif;
   padding-top: 70px;
   color: #171717;
   background-color: #f3f3f3;
+}
+
+h2.sec-title {
+  margin-top: 35px;
+  text-transform: uppercase;
 }
 
 /* Keep logo on navbar and footer >= 220px */
@@ -39,6 +46,26 @@ body {
 }
 
 /* Styles specific to header */
+.nav-item.nav-link {
+  border-bottom: 4px solid transparent;
+  transition-duration: 1s;
+}
+
+@media only screen and (min-width: 1100px) {
+  .nav-item.nav-link {
+    color: #171717 !important;
+  }
+}
+
+.nav-item.nav-link:hover {
+  border-bottom: 4px solid #756aee !important;
+  transition-duration: 1s;
+}
+
+.nav-active {
+  border-bottom: 4px solid #756aee !important;
+}
+
 @media only screen and (min-width: 1100px) {
   .justify-content-end {
     margin-right: 80px !important;
@@ -338,6 +365,7 @@ body {
 /* Styles for history section on about page */
 #abt-history {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #abt-history .history-img {
@@ -371,10 +399,51 @@ body {
   left: 48%;
 }
 
-.hover-time:before {
-  height: 19px;
-  width: 19px;
-  border: 5px solid #061b75;
+/* Styles for affiliates section on about page */
+#abt-affilations {
+  min-height: 360px;
+  background-color: #e9e9e9;
+  padding: 30px 0;
+}
+
+#abt-affilations .afilliate {
+  text-align: center;
+  padding: 0 20px;
+}
+
+#abt-affilations .afil-col {
+  border: solid 1px transparent;
+  padding: 5px;
+  transition-duration: 1s;
+}
+
+#abt-affilations .afil-col:hover {
+  border: solid 1px #686666;
+  transition-duration: 1s;
+  padding-top: 10px;
+}
+
+#abt-affilations .af-logo {
+  margin: auto auto;
+  vertical-align: middle;
+  width: 100%;
+  border: solid 1px #999898;
+  filter: grayscale(100%) opacity(40%);
+  transition-duration: 1s;
+}
+
+#abt-affilations .af-logo:hover {
+  width: 95%;
+  border: solid 1px #686666;
+  filter: grayscale(100%) opacity(100%);
+  transition-duration: 1s;
+}
+
+#abt-affilations .af-logo-hover {
+  width: 95%;
+  border: solid 1px #686666;
+  filter: opacity(100%);
+  transition-duration: 1s;
 }
 
 /* Styles for the mission statement section on the about page */
