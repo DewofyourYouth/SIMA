@@ -1,26 +1,24 @@
 #welcome {
-    min-height: 700px;
-    background: url(https://raw.githubusercontent.com/DewofyourYouth/SIMA/master/assets/workplace.jpg)fixed top center;
-    background-size: cover;
-    text-align: center;
+  min-height: 700px;
+  background: url(https://raw.githubusercontent.com/DewofyourYouth/SIMA/master/assets/workplace.jpg)
+    fixed top center;
+  background-size: cover;
+  text-align: center;
+  @media #{$laptop} {
+    padding-top: 200px;
+  }
+
+  .subtext {
     @media #{$laptop} {
-        padding-top: 200px;
+      padding: 10px 150px !important;
     }
-    
-
-    .subtext {
-        @media #{$laptop} {
-            padding: 10px 150px !important;
-        }
-        @media #{$mobile} {
-            background-color: #ffffffbe;
-            padding: 10px;
-            border-radius: 5px;
-            -moz-box-shadow: 1px 2px 3px #ffffff75;;
-            -webkit-box-shadow: 1px 2px 3px #ffffff75;
-            box-shadow: 1px 2px 5px #ffffff75;
-        }
-        
+    @media #{$mobile} {
+      background-color: #ffffffbe;
+      padding: 10px;
+      border-radius: 5px;
+      -moz-box-shadow: 1px 2px 3px #ffffff75;
+      -webkit-box-shadow: 1px 2px 3px #ffffff75;
+      box-shadow: 1px 2px 5px #ffffff75;
     }
+  }
 }
-

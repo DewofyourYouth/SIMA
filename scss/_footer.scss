@@ -1,94 +1,93 @@
 footer {
-    background-color: #171717;
-    padding: 0px 30px;
+  background-color: #171717;
+  padding: 0px 30px;
 
   .col-md-4 {
-            padding: 40px 10px;
-            border-right: solid .5px $header-grey;
-            
-            @media #{$mobile} {
-                border-right: none;
-            }
-        }
+    padding: 40px 10px;
+    border-right: solid 0.5px $header-grey;
 
-    .lc {
-        border-right: none;
+    @media #{$mobile} {
+      border-right: none;
     }
+  }
 
-    ul#social-media {
-        li {
-            display: inline-block;
-            padding: 10px;
-            padding-top: 20%;
-            font-size: 2rem;
+  .lc {
+    border-right: none;
+  }
 
-            @media #{$mobile} {
-                text-align: center;
-                padding-top: 0;
-                font-size: 1.5rem;
-            }
-        }  
-        
+  ul#social-media {
+    li {
+      display: inline-block;
+      padding: 10px;
+      padding-top: 20%;
+      font-size: 2rem;
+
+      @media #{$mobile} {
+        text-align: center;
+        padding-top: 0;
+        font-size: 1.5rem;
+      }
     }
+  }
 
-    .logo {
-        @extend #logo-img;
-        padding-bottom: 30px;
+  .logo {
+    @extend #logo-img;
+    padding-bottom: 30px;
+  }
+
+  .sm a {
+    color: $header-grey;
+    transition-duration: 1s;
+
+    &:hover {
+      color: #ffe9e9;
+      transition-duration: 1s;
     }
-
-    .sm a{
-        color: $header-grey;
-        transition-duration: 1s;
-
-        &:hover {
-            color: #ffe9e9;
-            transition-duration: 1s;
-        }
-    }
+  }
 }
 
 .footer-txt {
-        color: lighten($header-grey, 20);
-        text-align: justify;
-        margin-right: 10px !important;
-    }
+  color: lighten($header-grey, 20);
+  text-align: justify;
+  margin-right: 10px !important;
+}
 
 #footer-contact {
+  display: flex;
+  flex-flow: column;
+  color: white;
+  justify-content: space-evenly;
+
+  .ftr-contact-info {
+    padding: 20px 0;
     display: flex;
-    flex-flow: column;
-    color: white;
-    justify-content: space-evenly;
+    flex-flow: row;
+    height: 1fr;
+    * {
+      min-width: 100px;
+    }
+  }
 
-    .ftr-contact-info {
-        padding: 20px 0;
-        display: flex;
-        flex-flow: row;
-        height: 1fr;
-        * {
-            min-width: 100px;
-        }
-    }
-    
-    .phones {
-        border-top: solid .5px $header-grey;
-        border-bottom: solid .5px $header-grey;
-    }
+  .phones {
+    border-top: solid 0.5px $header-grey;
+    border-bottom: solid 0.5px $header-grey;
+  }
 
-    .contact-title {
-        color: $dark-bg-purple;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
+  .contact-title {
+    color: $dark-bg-purple;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 
-    a {
-        display: block;
-        color: #fff;
-        transition-duration: 500ms;
-        transition-timing-function: ease-in-out;
-        &:hover {
-            color: $dark-bg-purple;
-            transition-duration: 500ms;
-            transition-timing-function: ease-in-out;
-        }
+  a {
+    display: block;
+    color: #fff;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      color: $dark-bg-purple;
+      transition-duration: 500ms;
+      transition-timing-function: ease-in-out;
     }
+  }
 }

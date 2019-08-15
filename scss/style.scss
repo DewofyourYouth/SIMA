@@ -4,85 +4,82 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600|Roboto:400,400i,700,900&display=swap');
-@import 'vars';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600|Roboto:400,400i,700,900&display=swap");
+@import "vars";
 
 /* Make padding on body to prevent overlap w/ fixed header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    padding-top: 70px;
-    color: $site-black;
-    background-color: $site-white;
+  font-family: "Roboto", sans-serif;
+  padding-top: 70px;
+  color: $site-black;
+  background-color: $site-white;
 }
 
 h2.sec-title {
-    margin-top: 35px;
-    text-transform: uppercase;
+  margin-top: 35px;
+  text-transform: uppercase;
 }
 
 /* Keep logo on navbar and footer >= 220px */
 #logo-img {
-    img {
-        max-width: 220px;
-    }
+  img {
+    max-width: 220px;
+  }
 }
 
 /* If mobile - make rows flexbox column */
 .row {
-    @media #{$mobile} {
-        display: flex;
-        flex-flow: column;
-    }
-
+  @media #{$mobile} {
+    display: flex;
+    flex-flow: column;
+  }
 }
 
-
- /*
+/*
     Intro on navbar pages (other than home page)
- */  
-
+ */
 
 #intro {
-    min-height: 400px;
-    background: linear-gradient(-45deg, #ffffff62, #fffdfd41), url(../assets/doc_computer.jpg)fixed right center;
-    background-position: cover;
-    text-align: center;
+  min-height: 400px;
+  background: linear-gradient(-45deg, #ffffff62, #fffdfd41),
+    url(../assets/doc_computer.jpg) fixed right center;
+  background-position: cover;
+  text-align: center;
 
-    h1 {
-        margin-top: 100px;
-    }
-
+  h1 {
+    margin-top: 100px;
+  }
 }
 
 /* Styles specific to header */
-@import 'header';
+@import "header";
 /* Styles for half half page components */
-@import 'half-page';
+@import "half-page";
 /* 
     Styles specific for profile pictures 
     - used on the hompage on the physicians page  
 */
-@import 'profile_pic';
+@import "profile_pic";
 /* Styles for welcome section on homepage */
-@import 'index/welcome';
+@import "index/welcome";
 /* Styles for the services section on the homepage */
-@import 'index/services';
+@import "index/services";
 /* Styles for the online payments section on the homepage */
-@import 'index/online_payments';
+@import "index/online_payments";
 /* Styles for the about section on the homepage */
-@import 'index/brief_about';
+@import "index/brief_about";
 /* Styles for the physician spotlight section on the homepage */
-@import 'index/physician_sl';
+@import "index/physician_sl";
 /* Styles for history section on about page */
-@import 'about/history';
+@import "about/history";
 /* Styles for affiliates section on about page */
-@import 'about/affiliates';
+@import "about/affiliates";
 /* Styles for the mission statement section on the about page */
-@import 'physicians';
+@import "physicians";
 /* Styles for nurses page */
-@import 'nurses';
+@import "nurses";
 /* Styles for billing */
-@import 'billing';
+@import "billing";
 /* Styles for footer */
-@import 'footer';
+@import "footer";

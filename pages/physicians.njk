@@ -1,12 +1,12 @@
 {% set page_name = 'Physicians' %}
 {% extends 'page-layout.njk' %}
 {% block pageContent %}
-   <!-- Physicians Spotlight -->
+    <!-- Physicians Spotlight -->
     <section id="physicians">
         <div class="row">
-        <div class="col-12">
-        <div id="doc-pics">
-                {% for person in doctor_pics %}
+            <div class="col-12">
+                <div id="doc-pics">
+                    {% for person in doctor_pics %}
                         <div class="doc-pic">
                             <div class="overlay">
                                 <h4>{{person.name}}</h4>
@@ -16,8 +16,8 @@
                                 <img src="{{person.src}}" alt="">
                             </a>
                         </div>
-                    
-                {% endfor %}</div>
 
-  
-{% endblock pageContent %}
+                    {% endfor %}
+                </div>
+
+            {% endblock pageContent %}

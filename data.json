@@ -1,31 +1,131 @@
 {
-    "photos": [
-        {"name":"intro photo", "src": "assets/doc_computer.jpg"},
-        {"name": "woman in suit", "src": "assets/woman.jpg"},
-        {"name": "man in suit", "src": "assets/suit.jpg"}
-    ],
-    "people_pics": [
-        {"name": "Jessica Spencer", "title": "Podiatrist", "src": "assets/woman1.jpg", "target": "individual.html"},
-        {"name": "Richard Wu", "title": "Break Dancer", "src": "assets/man2.jpg", "target": "individual.html"},
-        {"name": "Natasha Tarkov", "title": "Gazes Fondly", "src": "assets/woman2.jpg", "target": "individual.html"},
-        {"name": "Deja Wu", "title": "Uncanny Resemblance", "src": "assets/man2.jpg", "target": "individual.html"}
-    ],
-    "doctor_pics": [
-        {"name": "Jessica Spencer", "title": "Podiatrist", "src": "assets/woman1.jpg", "target": "individual.html"},
-        {"name": "Richard Wu", "title": "Break Dancer", "src": "assets/man2.jpg", "target": "individual.html"},
-        {"name": "Natasha Tarkov", "title": "Gazes Fondly", "src": "assets/woman2.jpg", "target": "individual.html"},
-        {"name": "Deja Wu", "title": "Uncanny Resemblance", "src": "assets/man2.jpg", "target": "individual.html"},
-        {"name": "Jessica Spencer", "title": "Podiatrist", "src": "assets/woman1.jpg", "target": "individual.html"},
-        {"name": "Richard Wu", "title": "Break Dancer", "src": "assets/man2.jpg", "target": "individual.html"},
-        {"name": "Natasha Tarkov", "title": "Gazes Fondly", "src": "assets/woman2.jpg", "target": "individual.html"},
-        {"name": "Deja Wu", "title": "Uncanny Resemblance", "src": "assets/man2.jpg", "target": "individual.html"},
-        {"name": "Jessica Spencer", "title": "Podiatrist", "src": "assets/woman1.jpg", "target": "individual.html"},
-        {"name": "Richard Wu", "title": "Break Dancer", "src": "assets/man2.jpg", "target": "individual.html"},
-        {"name": "Natasha Tarkov", "title": "Gazes Fondly", "src": "assets/woman2.jpg", "target": "individual.html"},
-        {"name": "Deja Wu", "title": "Uncanny Resemblance", "src": "assets/man2.jpg", "target": "individual.html"},
-        {"name": "Jessica Spencer", "title": "Podiatrist", "src": "assets/woman1.jpg", "target": "individual.html"},
-        {"name": "Richard Wu", "title": "Break Dancer", "src": "assets/man2.jpg", "target": "individual.html"},
-        {"name": "Natasha Tarkov", "title": "Gazes Fondly", "src": "assets/woman2.jpg", "target": "individual.html"},
-        {"name": "Deja Wu", "title": "Uncanny Resemblance", "src": "assets/man2.jpg", "target": "individual.html"}
-    ]
+  "photos": [
+    { "name": "intro photo", "src": "assets/doc_computer.jpg" },
+    { "name": "woman in suit", "src": "assets/woman.jpg" },
+    { "name": "man in suit", "src": "assets/suit.jpg" }
+  ],
+  "people_pics": [
+    {
+      "name": "Jessica Spencer",
+      "title": "Podiatrist",
+      "src": "assets/woman1.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Richard Wu",
+      "title": "Break Dancer",
+      "src": "assets/man2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Natasha Tarkov",
+      "title": "Gazes Fondly",
+      "src": "assets/woman2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Deja Wu",
+      "title": "Uncanny Resemblance",
+      "src": "assets/man2.jpg",
+      "target": "individual.html"
+    }
+  ],
+  "doctor_pics": [
+    {
+      "name": "Jessica Spencer",
+      "title": "Podiatrist",
+      "src": "assets/woman1.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Richard Wu",
+      "title": "Break Dancer",
+      "src": "assets/man2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Natasha Tarkov",
+      "title": "Gazes Fondly",
+      "src": "assets/woman2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Deja Wu",
+      "title": "Uncanny Resemblance",
+      "src": "assets/man2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Jessica Spencer",
+      "title": "Podiatrist",
+      "src": "assets/woman1.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Richard Wu",
+      "title": "Break Dancer",
+      "src": "assets/man2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Natasha Tarkov",
+      "title": "Gazes Fondly",
+      "src": "assets/woman2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Deja Wu",
+      "title": "Uncanny Resemblance",
+      "src": "assets/man2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Jessica Spencer",
+      "title": "Podiatrist",
+      "src": "assets/woman1.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Richard Wu",
+      "title": "Break Dancer",
+      "src": "assets/man2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Natasha Tarkov",
+      "title": "Gazes Fondly",
+      "src": "assets/woman2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Deja Wu",
+      "title": "Uncanny Resemblance",
+      "src": "assets/man2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Jessica Spencer",
+      "title": "Podiatrist",
+      "src": "assets/woman1.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Richard Wu",
+      "title": "Break Dancer",
+      "src": "assets/man2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Natasha Tarkov",
+      "title": "Gazes Fondly",
+      "src": "assets/woman2.jpg",
+      "target": "individual.html"
+    },
+    {
+      "name": "Deja Wu",
+      "title": "Uncanny Resemblance",
+      "src": "assets/man2.jpg",
+      "target": "individual.html"
+    }
+  ]
 }
