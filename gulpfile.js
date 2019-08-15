@@ -43,7 +43,6 @@ function watch() {
     //  Arguments: 
     //      1) path: where to look for changes, 
     //      2) callback: which Gulp functions to run
-    gulp.watch('./data.json', nunjucks);
     gulp.watch('./pages/**/*.njk', nunjucks);
     gulp.watch('./templates/**/*.njk', nunjucks);
     gulp.watch('./scss/**/*.scss', style);

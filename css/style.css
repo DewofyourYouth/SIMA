@@ -653,6 +653,8 @@ h2.sec-title {
 .question .q-container .q {
   margin: auto 0;
   width: 80%;
+  text-align: justify;
+  margin-right: 30px;
 }
 
 @media only screen and (max-width: 1050px) {
