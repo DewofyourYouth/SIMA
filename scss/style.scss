@@ -3,15 +3,21 @@
     Copyright (c) Jacob Shore
 
 */
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap');
 @import 'vars';
 
 /* Make padding on body to prevent overlap w/ fixed header */
 
 body {
+    font-family: 'Roboto', sans-serif;
     padding-top: 70px;
-    color: #171717;
-    background-color: #f3f3f3;
+    color: $site-black;
+    background-color: $site-white;
+}
+
+h2.sec-title {
+    margin-top: 35px;
+    text-transform: uppercase;
 }
 
 /* Keep logo on navbar and footer >= 220px */
@@ -38,7 +44,7 @@ body {
 
 #intro {
     min-height: 400px;
-    background: linear-gradient(#0000009a, #0000009a), url(../assets/doc_computer.jpg)fixed right center;
+    background: linear-gradient(-45deg, #000000cc, #00000063), url(../assets/doc_computer.jpg)fixed right center;
     background-position: cover;
     color: white;
     text-align: center;
@@ -68,8 +74,12 @@ body {
 @import 'index/brief_about';
 /* Styles for the physician spotlight section on the homepage */
 @import 'index/physician_sl';
-/* Styles for the mission statement on the about page */
+/* Styles for the mission statement section on the about page */
 @import 'about/mission_statement';
+/* Styles for history section on about page */
+@import 'about/history';
+/* Styles for affiliates section on about page */
+@import 'about/affiliates';
 /* Styles for the mission statement section on the about page */
 @import 'physicians';
 /* Styles for footer */

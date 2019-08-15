@@ -16,14 +16,14 @@ const data = require('gulp-data');
         // where the template files are located
         path: ['templates']
     }))
-    // where to send the converted njk > html files
+    // where to send the converted njk files => html files
     .pipe(gulp.dest('./'))
 }
 
 function style() {
     // 1. where is my scss file?
     return gulp.src('./scss/**/*.scss')
-    // 2. pass that file through sass compiler
+    // 2. pass that file through sass compiler (to change to minified change outputStyle to compressed)
     .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
     // 3. where to save compiled css?
     .pipe(gulp.dest('./css'))
@@ -52,5 +52,4 @@ function watch() {
 }
 
 // these make the functions accessable from the command line by writing gulp and then the value.
-exports.style = style;
 exports.watch = watch;
