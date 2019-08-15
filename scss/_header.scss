@@ -1,6 +1,7 @@
 .nav-item.nav-link {
     @media #{$laptop}{
        color: $site-black !important; 
+       padding-bottom: 1rem;
     }
     
     border-bottom: 4px solid transparent;
