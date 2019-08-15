@@ -44,7 +44,7 @@ h2.sec-title {
 
 #intro {
     min-height: 400px;
-    background: linear-gradient(-45deg, #ffffff9d, #fffdfd63), url(../assets/doc_computer.jpg)fixed right center;
+    background: linear-gradient(-45deg, #ffffff62, #fffdfd41), url(../assets/doc_computer.jpg)fixed right center;
     background-position: cover;
     text-align: center;
 
@@ -73,13 +73,15 @@ h2.sec-title {
 @import 'index/brief_about';
 /* Styles for the physician spotlight section on the homepage */
 @import 'index/physician_sl';
-/* Styles for the mission statement section on the about page */
-@import 'about/mission_statement';
 /* Styles for history section on about page */
 @import 'about/history';
 /* Styles for affiliates section on about page */
 @import 'about/affiliates';
 /* Styles for the mission statement section on the about page */
 @import 'physicians';
+/* Styles for nurses page */
+@import 'nurses';
+/* Styles for billing */
+@import 'billing';
 /* Styles for footer */
 @import 'footer';

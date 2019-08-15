@@ -33,5 +33,14 @@ $(document).ready(function(){
         $(this).removeClass('mouse-over', 'slow');
     });
 
+    $('.question').click(function(){
+        $(this).toggleClass('show-answer');
+        if($(this).hasClass('show-answer')){
+          $(this).children('.q-container').children('.icon').text('−');
+        } else {
+          $(this).children().children('.icon').text('+');
+        }
+      })
+
 
 });

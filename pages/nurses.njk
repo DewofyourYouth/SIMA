@@ -10,12 +10,10 @@
                 {% for person in doctor_pics %}
                         <div class="doc-pic">
                            
-                                
-                            
-                            <a href="#">
+                            <a href="{{person.target}}">
                                 <img src="{{person.src}}" alt="">
                             </a>
-                            <a href="#">
+                            <a href="{{person.target}}">
                                 <div class="nurse-info">
                                     <p class="p-name">{{person.name}}</p>
                                     <p class="p-title">{{person.title}}</p>

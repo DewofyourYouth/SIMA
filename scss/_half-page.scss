@@ -5,6 +5,10 @@
         max-height: 100%;
         display: flex;
         flex-flow: column;
+
+        a.btn-lg {
+            margin-bottom: 30px;
+        }
     }
 
     .col-md-6 {
@@ -44,4 +48,11 @@
     @media #{$mobile} {
                 flex-flow: column-reverse;
             }
+}
+
+#abt-mission, #individual, #online-payment {
+    @extend %half-page;
+    h2, a {
+        margin-left: 30px;
+    }
 }

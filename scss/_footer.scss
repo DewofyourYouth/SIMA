@@ -83,5 +83,12 @@ footer {
     a {
         display: block;
         color: #fff;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
+        &:hover {
+            color: $dark-bg-purple;
+            transition-duration: 500ms;
+            transition-timing-function: ease-in-out;
+        }
     }
 }

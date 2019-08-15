@@ -35,7 +35,7 @@ h2.sec-title {
  */
 #intro {
   min-height: 400px;
-  background: linear-gradient(-45deg, #ffffff9d, #fffdfd63), url(../assets/doc_computer.jpg) fixed right center;
+  background: linear-gradient(-45deg, #ffffff62, #fffdfd41), url(../assets/doc_computer.jpg) fixed right center;
   background-position: cover;
   text-align: center;
 }
@@ -66,6 +66,15 @@ h2.sec-title {
   border-bottom: 4px solid #756aee !important;
 }
 
+@media only screen and (max-width: 990px) {
+  .nav-active {
+    border-bottom: 4px solid transparent;
+    background-color: #756aee;
+    color: white !important;
+    padding-left: 10px !important;
+  }
+}
+
 @media only screen and (min-width: 1100px) {
   .justify-content-end {
     margin-right: 80px !important;
@@ -73,27 +82,30 @@ h2.sec-title {
 }
 
 /* Styles for half half page components */
-#brief-about, #online-payments, #abt-mission {
+#brief-about, #abt-mission, #individual, #online-payment, #online-payments {
   background-color: #e9e9e9;
   max-height: 600px;
 }
 
 @media only screen and (max-width: 990px) {
-  #brief-about, #online-payments, #abt-mission {
+  #brief-about, #abt-mission, #individual, #online-payment, #online-payments {
     max-height: 100%;
     display: flex;
     flex-flow: column;
   }
+  #brief-about a.btn-lg, #abt-mission a.btn-lg, #individual a.btn-lg, #online-payment a.btn-lg, #online-payments a.btn-lg {
+    margin-bottom: 30px;
+  }
 }
 
-#brief-about .col-md-6, #online-payments .col-md-6, #abt-mission .col-md-6 {
+#brief-about .col-md-6, #abt-mission .col-md-6, #individual .col-md-6, #online-payment .col-md-6, #online-payments .col-md-6 {
   margin: auto 0;
   padding: 0;
   text-align: center;
   width: 100%;
 }
 
-#brief-about .col-md-6 img, #online-payments .col-md-6 img, #abt-mission .col-md-6 img {
+#brief-about .col-md-6 img, #abt-mission .col-md-6 img, #individual .col-md-6 img, #online-payment .col-md-6 img, #online-payments .col-md-6 img {
   width: 100%;
   object-fit: cover;
   object-position: top;
@@ -101,23 +113,23 @@ h2.sec-title {
 }
 
 @media only screen and (min-width: 1439px) {
-  #brief-about .col-md-6 img, #online-payments .col-md-6 img, #abt-mission .col-md-6 img {
+  #brief-about .col-md-6 img, #abt-mission .col-md-6 img, #individual .col-md-6 img, #online-payment .col-md-6 img, #online-payments .col-md-6 img {
     object-position: 50% 25%;
   }
 }
 
 @media only screen and (min-width: 1439px) {
-  #brief-about .col-md-6 img, #online-payments .col-md-6 img, #abt-mission .col-md-6 img {
+  #brief-about .col-md-6 img, #abt-mission .col-md-6 img, #individual .col-md-6 img, #online-payment .col-md-6 img, #online-payments .col-md-6 img {
     object-position: 50% 25%;
   }
 }
 
-#brief-about .col-md-6 h2, #online-payments .col-md-6 h2, #abt-mission .col-md-6 h2 {
+#brief-about .col-md-6 h2, #abt-mission .col-md-6 h2, #individual .col-md-6 h2, #online-payment .col-md-6 h2, #online-payments .col-md-6 h2 {
   color: #919191;
   padding-bottom: 20px;
 }
 
-#brief-about .col-md-6 p, #online-payments .col-md-6 p, #abt-mission .col-md-6 p {
+#brief-about .col-md-6 p, #abt-mission .col-md-6 p, #individual .col-md-6 p, #online-payment .col-md-6 p, #online-payments .col-md-6 p {
   text-align: justify;
   padding: 10px 30px;
 }
@@ -126,6 +138,10 @@ h2.sec-title {
   #brief-about {
     flex-flow: column-reverse;
   }
+}
+
+#abt-mission h2, #abt-mission a, #individual h2, #individual a, #online-payment h2, #online-payment a {
+  margin-left: 30px;
 }
 
 /* 
@@ -145,7 +161,7 @@ h2.sec-title {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1050px) {
   #profile-pic, #doc-pics, #physicians #doc-pics {
     display: flex;
     flex-flow: row wrap;
@@ -200,7 +216,7 @@ h2.sec-title {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1050px) {
   .overlay {
     width: 220px;
   }
@@ -216,77 +232,6 @@ h2.sec-title {
   margin-top: 0;
   font-size: .9rem;
   font-style: italic;
-}
-
-#nurses a:hover, #nurses a:visited, #nurses a:active, #nurses a:link {
-  text-decoration: none;
-}
-
-#nurses #doc-pics {
-  margin: 30px 50px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
-}
-
-#nurses .nurse-info {
-  text-decoration: none;
-  display: flex;
-  flex-flow: row;
-  width: 100% !important;
-}
-
-@media only screen and (max-width: 990px) {
-  #nurses .nurse-info {
-    flex-flow: column;
-  }
-}
-
-#nurses .nurse-info p {
-  font-family: 'Open Sans', sans-serif;
-  width: 100%;
-  padding-top: 20px;
-  margin-bottom: 5px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-#nurses .nurse-info p:hover {
-  color: #756aee;
-  transition-duration: 1s;
-}
-
-#nurses .nurse-info .p-name {
-  text-align: left;
-  color: #171717;
-  text-decoration: none;
-  transition-duration: 1s;
-}
-
-#nurses .nurse-info .p-title {
-  text-align: right;
-  color: #787878;
-  text-transform: uppercase;
-  transition-duration: 1s;
-}
-
-@media only screen and (max-width: 990px) {
-  #nurses .nurse-info .p-title {
-    text-align: left;
-  }
-}
-
-#nurses .doc-pic {
-  border-bottom: solid 1px #171717;
-}
-
-#nurses .doc-pic img {
-  filter: grayscale(50%);
-}
-
-#nurses .doc-pic img:hover {
-  box-shadow: 0px 0px 5px 5px #756aee;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
 }
 
 /* Styles for welcome section on homepage */
@@ -441,11 +386,6 @@ h2.sec-title {
   transition-duration: 1s;
 }
 
-/* Styles for the mission statement section on the about page */
-#abt-mission h2, #abt-mission a {
-  margin-left: 30px;
-}
-
 /* Styles for history section on about page */
 #abt-history {
   text-align: center;
@@ -574,6 +514,187 @@ h2.sec-title {
   transition-timing-function: ease;
 }
 
+/* Styles for nurses page */
+@media only screen and (max-width: 1050px) {
+  #nurses {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+}
+
+@media only screen and (max-width: 1050px) and (max-width: 990px) {
+  #nurses {
+    margin: 30px 0;
+  }
+}
+
+#nurses a:hover, #nurses a:visited, #nurses a:active, #nurses a:link {
+  text-decoration: none;
+}
+
+#nurses #doc-pics {
+  margin: 30px 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+@media only screen and (max-width: 990px) {
+  #nurses #doc-pics {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+#nurses .nurse-info {
+  text-decoration: none;
+  display: flex;
+  flex-flow: row;
+  width: 100% !important;
+}
+
+@media only screen and (max-width: 990px) {
+  #nurses .nurse-info {
+    flex-flow: column;
+  }
+}
+
+#nurses .nurse-info p {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#nurses .nurse-info p:hover {
+  color: #756aee;
+  transition-duration: 1s;
+}
+
+#nurses .nurse-info .p-name {
+  text-align: left;
+  color: #171717;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+#nurses .nurse-info .p-title {
+  text-align: right;
+  color: #787878;
+  text-transform: uppercase;
+  transition-duration: 1s;
+}
+
+@media only screen and (max-width: 990px) {
+  #nurses .nurse-info .p-title {
+    text-align: left;
+  }
+}
+
+#nurses .doc-pic {
+  border-bottom: solid 1px #171717;
+}
+
+#nurses .doc-pic img {
+  filter: grayscale(50%);
+}
+
+#nurses .doc-pic img:hover {
+  box-shadow: 0px 0px 5px 5px #756aee;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 990px) {
+  #nurses .doc-pic img {
+    max-width: 98%;
+  }
+}
+
+/* Styles for billing */
+#q-n-a {
+  padding: 30px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 1050px) {
+  #q-n-a {
+    background-color: transparent;
+    margin: 30px 0;
+    padding: 0;
+  }
+}
+
+.question {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 50px;
+  cursor: pointer;
+  background-color: #e9e9e9;
+  font-size: 1.3rem;
+  border: solid 1px #919191;
+  margin-bottom: 10px;
+}
+
+.question .q-container {
+  background-color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row;
+  padding: 20px;
+}
+
+.question .q-container .q {
+  margin: auto 0;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1050px) {
+  .question .q-container .q {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.question .q-container .icon {
+  display: flex;
+  vertical-align: top;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid 7px #007bff;
+}
+
+@media only screen and (max-width: 1050px) {
+  .question .q-container .icon {
+    display: none;
+  }
+}
+
+.question .answer {
+  overflow: hidden;
+  height: 0px;
+  margin: 0 10px;
+  padding: 0 20px;
+  filter: opacity(0%);
+  transition-duration: 1s;
+}
+
+.show-answer .answer {
+  height: fit-content;
+  padding: 20px;
+  margin: 0 10px;
+  border-top: 1px solid #000;
+  filter: opacity(100%);
+  transition-duration: 1s;
+}
+
 /* Styles for footer */
 footer {
   background-color: #171717;
@@ -662,4 +783,12 @@ footer .sm a:hover {
 #footer-contact a {
   display: block;
   color: #fff;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+#footer-contact a:hover {
+  color: #9f97f9;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
