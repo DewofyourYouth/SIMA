@@ -1,0 +1,42 @@
+#abt-history {
+    text-align: center;
+
+    .history-img {
+        margin: 30px 10px 0 0;
+    }
+
+    .year {
+        color: #756aee;
+    }
+
+    h4 {
+        padding-top: 30px;
+    }
+
+    hr {
+        margin: 25px 0;
+        position: relative;
+        border-top: 2px solid #cecece;
+
+        &:before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            top: -7px;
+            border: 3px solid $purple-border;
+            border-radius: 50%;
+            background: $purple;
+            left: 48%;  
+        }
+
+    }
+
+}
+
+.hover-time:before {
+    height: 19px;
+    width: 19px;
+    border: 5px solid rgb(6, 27, 117);
+}
