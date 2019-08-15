@@ -3,7 +3,7 @@
     Copyright (c) Jacob Shore
 
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600|Roboto:400,400i,700,900&display=swap');
 @import 'vars';
 
 /* Make padding on body to prevent overlap w/ fixed header */
@@ -44,9 +44,8 @@ h2.sec-title {
 
 #intro {
     min-height: 400px;
-    background: linear-gradient(-45deg, #000000cc, #00000063), url(../assets/doc_computer.jpg)fixed right center;
+    background: linear-gradient(-45deg, #ffffff9d, #fffdfd63), url(../assets/doc_computer.jpg)fixed right center;
     background-position: cover;
-    color: white;
     text-align: center;
 
     h1 {
