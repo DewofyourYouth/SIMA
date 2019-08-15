@@ -127,7 +127,7 @@
     .doc-pic {
         border-bottom: solid 1px $site-black;
         img {
-            filter: grayscale(30%);
+            filter: grayscale(50%);
             &:hover {
                 box-shadow: 0px 0px 5px 5px $purple;
                 transition-duration: 300ms;

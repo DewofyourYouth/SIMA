@@ -281,7 +281,7 @@ h2.sec-title {
 }
 
 #nurses .doc-pic img {
-  filter: grayscale(30%);
+  filter: grayscale(50%);
 }
 
 #nurses .doc-pic img:hover {
