@@ -6,14 +6,14 @@
         <div class="row">
             <div class="col-12">
                 <div id="doc-pics">
-                    {% for person in doctor_pics %}
+                    {% for doctor in doctor_pics %}
                         <div class="doc-pic">
                             <div class="overlay">
-                                <h4>{{person.name}}</h4>
-                                <p>{{person.title}}</p>
+                                <h4>{{doctor.name}}</h4>
+                                <p>{{doctor.title}}</p>
                             </div>
-                            <a href="{{person.target}}">
-                                <img src="{{person.src}}" alt="">
+                            <a href="{{doctor.target}}">
+                                <img src="{{doctor.src}}" alt="">
                             </a>
                         </div>
 
