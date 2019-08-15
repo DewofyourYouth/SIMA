@@ -350,6 +350,12 @@ h2.sec-title {
   border-radius: 10px;
 }
 
+@media only screen and (min-width: 1439px) {
+  #left-image img {
+    width: 65%;
+  }
+}
+
 @media only screen and (max-width: 990px) {
   #left-image img {
     width: 95%;
@@ -362,7 +368,7 @@ h2.sec-title {
 }
 
 #hs-1 h3 {
-  padding-bottom: 15px;
+  padding: 15px 20px;
 }
 
 #hs-2 {
@@ -402,6 +408,13 @@ h2.sec-title {
   border-radius: 5px;
   vertical-align: middle;
   height: 300px;
+}
+
+@media only screen and (min-width: 1439px) {
+  .tc {
+    height: 400px;
+    padding-right: 10px;
+  }
 }
 
 @media only screen and (max-width: 990px) {
