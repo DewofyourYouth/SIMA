@@ -858,6 +858,7 @@ h2.sec-title {
 #graphics img {
   width: 100%;
   object-fit: cover;
+  padding-top: 10px;
 }
 
 /* Styles for footer */
