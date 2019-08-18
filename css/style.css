@@ -470,7 +470,28 @@ h2.sec-title {
   transition-duration: 1s;
 }
 
-/* Styles for the mission statement section on the about page */
+/* Styles for services page */
+#services {
+  margin: 40px 30px;
+}
+
+#services .service {
+  padding: 5px;
+}
+
+#services .service hr {
+  border: solid 1.5px #ccc;
+  border-radius: 1px;
+  margin: 30px 100px;
+}
+
+#services .service .service-inner {
+  margin: 10px;
+  padding: 50px 30px;
+  box-shadow: 0px 0px 3px 2px #ccc;
+}
+
+/* Styles for the physicians page */
 #physicians {
   padding-top: 50px;
 }
