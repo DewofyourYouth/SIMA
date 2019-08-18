@@ -757,6 +757,12 @@ h2.sec-title {
   font-family: "Open Sans", sans-serif;
 }
 
+@media only screen and (min-width: 1439px) {
+  #patients {
+    margin: 40px 150px;
+  }
+}
+
 #patients .text {
   box-shadow: 0px 0px 3px 1px #ccc;
   border-radius: 10px 10px 0 0 !important;
