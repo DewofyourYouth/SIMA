@@ -28,6 +28,8 @@
     .q {
       margin: auto 0;
       width: 80%;
+      text-align: justify;
+      margin-right: 30px;
       @media #{$lt-tab} {
         width: 100%;
         margin: 0;
@@ -35,14 +37,14 @@
       }
     }
     .icon {
-        display: flex;
-        vertical-align: top;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        border: solid 7px $bs-primary-blue;
+      display: flex;
+      vertical-align: top;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: solid 7px $bs-primary-blue;
       @media #{$lt-tab} {
         display: none;
       }
@@ -69,4 +71,3 @@
     transition-duration: 1s;
   }
 }
-

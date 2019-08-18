@@ -1,7 +1,33 @@
 /**
-
     Copyright (c) Jacob Shore
+*/
 
+/*
+  ========================================
+  TABLE OF CONTENTS
+  ========================================
+
+  1) General Stylings
+  2) Intro section for pages
+  3) Header Styles
+  4) Half page img half page text layout styles
+  5) Profile pics styles
+  6) Home Page Styles
+    i - Welcome section
+    ii - Services section
+    iii - Online payments sections
+    iv - About section
+    v - physicians spotlight section
+  7) About Page Styles
+    i - History section
+    ii - Affiliates section 
+  8)  Services Page Styles
+  9)  Physicians Page Styles
+  10) Nurses Page Style
+  11) Billing Page Styles
+  12  Patients Page Styles
+  14) Contact page Styles
+  15) Footer Styles
 */
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600|Roboto:400,400i,700,900&display=swap");
@@ -54,7 +80,7 @@ h2.sec-title {
 
 /* Styles specific to header */
 @import "header";
-/* Styles for half half page components */
+/* Styles for half page img half page text layout  components */
 @import "half-page";
 /* 
     Styles specific for profile pictures 
@@ -75,11 +101,17 @@ h2.sec-title {
 @import "about/history";
 /* Styles for affiliates section on about page */
 @import "about/affiliates";
-/* Styles for the mission statement section on the about page */
+/* Styles for services page */
+@import "services";
+/* Styles for the physicians page */
 @import "physicians";
 /* Styles for nurses page */
 @import "nurses";
-/* Styles for billing */
+/* Styles for billing page */
 @import "billing";
+/* Styles for patients page */
+@import "patients";
+/* Styles for contact page */
+@import "contact";
 /* Styles for footer */
 @import "footer";
