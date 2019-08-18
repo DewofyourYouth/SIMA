@@ -823,6 +823,43 @@ h2.sec-title {
 }
 
 /* Styles for contact page */
+#contact .inner-wrapper {
+  padding: 40px 0;
+  margin: 20px 0;
+  border: solid 1px #aca8a8;
+}
+
+#contact p {
+  margin-bottom: 0;
+}
+
+#contact p a {
+  font-weight: 600;
+  color: #171717;
+  transition-duration: 500ms;
+}
+
+#contact p a:hover {
+  text-decoration: none;
+  color: #007bff;
+  transition-duration: 500ms;
+}
+
+#contact .icon {
+  font-size: 4rem;
+  padding-bottom: 20px;
+  color: #007bff;
+}
+
+#graphics {
+  padding: 40px 0;
+}
+
+#graphics img {
+  width: 100%;
+  object-fit: cover;
+}
+
 /* Styles for footer */
 footer {
   background-color: #171717;
