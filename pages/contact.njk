@@ -1,7 +1,52 @@
 {% set page_name = "Contact" %}
 {% extends 'page-layout.njk' %}
 {% block pageContent %}
-    <div class="col-12">
-        <div class="row"></div>
-    </div>
+    <section id="contact">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="inner-wrapper">
+                    <div class="icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <p>
+                        <a href="tel:+11234567890">+1 123 456 7890</a>
+                    </p>
+                    <p>
+                        <a href="tel:+11234567890">+1 123 456 7890</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="inner-wrapper">
+                    <div class="icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <p>
+                        <a href="#">123 Any Street<br>East Leftovershoe, MI 01234</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="inner-wrapper">
+                    <div class="icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <p>
+                        <a href="#">spam@spamster.net</a>
+                    </p>
+                    <p>
+                        <a href="#">spammy@spamson.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="graphics" class="row text-center">
+        <div class="col-md-6">
+            <img src="https://placehold.it/500x300?text=Map%20Thingy" alt="">
+        </div>
+         <div class="col-md-6">
+            <img src="https://placehold.it/500x300?text=Image" alt="">
+        </div>
+    </section>
 {% endblock pageContent %}

@@ -1,0 +1,35 @@
+#contact {
+    .inner-wrapper {
+        padding: 40px 0;
+        margin: 20px 0;
+        border: solid 1px #aca8a8;
+    } 
+
+    p {
+        margin-bottom: 0;
+        a {
+            font-weight: 600;
+            color: $site-black;
+            transition-duration: 500ms;
+            &:hover {
+                text-decoration: none;
+                color: $bs-primary-blue;
+                transition-duration: 500ms;
+            }
+        }
+    }
+
+    .icon {
+        font-size: 4rem;
+        padding-bottom: 20px;
+        color: $bs-primary-blue;
+    }
+}
+
+#graphics {
+    padding: 40px 0;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
